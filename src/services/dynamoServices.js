@@ -4,6 +4,10 @@ const ddb = new AWS.DynamoDB.DocumentClient({region:'us-east-1'});
 
 exports.scan = async (params, callback) => {
     console.log('function scacn with data:', params);
+    if(!(!!params.LotePr)){
+        console.log('lot not found');
+        return {}            
+    }
     const parameter ={
         TableName : `${params['TableName']}`,
         FilterExpression: '#Lote = :Lote',
