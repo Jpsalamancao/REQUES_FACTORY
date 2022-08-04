@@ -11,6 +11,6 @@ exports.handler = async (event, context, callback) => {
         };
         return res;
     }
-   // res = await factory.getMethod(event,callback);
-   console.log('se ejecuto la lambda')
+     res = await factory.getMethod(event,callback);
+
 };

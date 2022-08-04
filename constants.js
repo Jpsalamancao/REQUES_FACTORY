@@ -10,13 +10,12 @@ function define (name, value){
 define('METHOD_FACTORY',{
     "GET":{
         "recordsprocess":"getRecordsProcess",
+        "chargerawmaterial":"getChargeRawMaterial",
+        "performance":"getPerformance",
+        "qualityproduct":"getQualityProduct"    
     },
     "POST":{
-        "recordsprocess":"postRecordsProcess",
-        "addproducto":"postAddProducto",
-        "chargerawmaterial":"postChargeRawMaterial",
-        "performance":"postPerformance",
-        "qualityproduct":"postQualityProduct"        
+    
     },
     "PUT":{
         
